@@ -1,0 +1,91 @@
+h2 
+{
+    font-family: Sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    text-decoration: underline
+}
+
+table
+{
+    font-family: verdana;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #70d66c 00%, #346636  100%);
+    border-collapse: collapse;
+    border-radius: 35px;
+
+
+}
+
+#input2
+{
+    border: #33ccff;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
+
+#input3
+{
+    border-radius: 15px;
+    border: turquoise;
+}
+
+table.inner {
+    border: 10px
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password]
+{
+    width: 50%;
+    padding: 6px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] 
+{
+    width: 15%;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+
+#submit
+{
+
+    border-radius: 15px;
+    border: 1px transparent;
+}
+
+#reset
+{
+    
+    border-radius: 15px;
+    border: 1px transparent;
+}
+
+
+
+#successheading {
+    color: green;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

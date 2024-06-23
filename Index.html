@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCSS</title>
+    <link rel="stylesheet" href="Student.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!--Heading-->
+
+    <div class="p-3 mb-2 bg-success">
+
+        <h1 align="center">
+            <span class="text-danger">C</span>ampus
+            <span class="text-danger">S</span>election
+            <span class="text-danger">S</span>ystem
+        </h1>
+
+    </div>
+
+
+    <!--Nav Bar-->
+    <nav class="navbar">
+        <button class="btn btn-outline-success col-md-2 col-sm-4  shadow p-3 mb-5 bg-#9AF482 rounded">
+            Home
+        </button>
+        <button class="btn btn-outline-success col-md-2 col-sm-4 shadow p-3 mb-5 bg-#9AF482 rounded"
+            onclick="showReg()">
+            New Company
+        </button>
+        <button class="btn btn-outline-success col-md-2 col-sm-4 shadow p-3 mb-5 bg-#9AF482 rounded"
+            onclick="showForm()">
+            New Student
+        </button>
+        <button class="btn btn-outline-success col-md-2 col-sm-4 shadow p-3 mb-5 bg-#9AF482 rounded"
+           onclick="ShowJob()">
+            Job Posts
+        </button>
+        <button class="btn btn-outline-success col-md-2 col-sm-4 shadow p-3 mb-5 bg-#9AF482 rounded"
+            onclick="ShowApply()">
+            Apply for Job
+        </button>
+        <button class="btn btn-outline-success col-md-2 col-sm-4 shadow p-3 mb-5 bg-#9AF482 rounded">
+            Contanct Us
+        </button>
+    </nav>
+
+    <!--Input Details-->
+
+    <div class="container-fluid text-center">
+        <div class="row  justify-content-center">
+        <div class="col-3">
+
+            <!--1st Form-->
+
+            <div class=" col-xl-8 col-md-8 border border-success mx-3 d-block  " style="border-radius:30px ; padding-right:px;">
+                <form action="">
+                    <h5 style="background-color:#88EE85 ; border-radius: 50px;">
+                        <span>
+                            Job Seeker Login Area
+                        </span>
+                    </h5>
+                    <br>
+                    <p style="display: flex; ">
+                        <span>Username:</span> <input type="text" placeholder="Enter the usename">
+                    </p>
+                    <p style="display: flex; ">
+                        <span>Password: </span> <input type="password" placeholder="Enter the password">
+                    </p>
+
+                    <button type="submit" class="btn btn-success">
+                        Login
+                    </button>
+                    <p align="right">
+                        <a href="#" class="text-success" onclick="showForm()">
+                            <u>New Student?</u>
+                        </a>
+                    </p>
+                    <p align="right">
+                        <a href="#" class="text-success">
+                            <u>Forget Password?</u>
+                        </a>
+                    </p>
+
+
+                </form>
+            </div>
+
+            <!--2nd Input Details-->
+            <!--Job Search-->
+
+
+
+            <div class="col-xl-8 col-md-8 border  border-success mx-3 my-5" style="border-radius:30px ;">
+                <h5 style="background-color:#88EE85 ; border-radius: 50px;">
+                    <span>
+                        Find Job by Category
+                    </span>
+                </h5>
+                <br>
+                <br>
+                <div class="list-group">
+                    <button class="btn btn-outline-success">
+                        <a href="#" class="list-group-item list-group-item-action ">Computer</a>
+                    </button>
+
+                    <button class="btn btn-outline-success">
+                        <a href="#" class="list-group-item list-group-item-action ">IT</a>
+                    </button>
+
+                    <button class="btn btn-outline-success">
+                        <a href="#" class="list-group-item list-group-item-action ">Mechanical</a>
+                    </button>
+
+                    <button class="btn btn-outline-success">
+                        <a href="#" class="list-group-item list-group-item-action ">Auto</a>
+                    </button>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        
+
+        <div class="col-6 ">
+
+            <!--2nd Form-->
+
+            <div class="col-xl-10 col-md-10 border border-success d-block" style="border-radius:30px ; ;">
+                <form action="">
+                    <h4 style="background-color:#88EE85 ; border-radius:50px;">
+                        :::::: ::::: Advance Search Zone :::: :::::
+                    </h4>
+                    <div class="row mx-3">
+                        <div class="col-4 mx-5">
+                            <br>
+                            <br>
+                            <p style="display: flex;">
+                                Category: <select name="Degree" id="Category" required
+                                    style="background-color: whitesmoke ;">
+                                    <option value="">--Select Your Category--</option>
+                                    <option value="CSE">Computer Science</option>
+                                    <option value="IT">Information Technology</option>
+                                    <option value="Mech">Mechanical</option>
+                                    <option value="Civil">Civil</option>
+                                    <option value="Elec">Electrical</option>
+                                </select>
+                            </p>
+                            <br>
+
+                            <p style="display:flex ;">
+                                Qualification: <select name="Degree" id="Qualification" required
+                                    style="background-color: whitesmoke ;">
+                                    <option value="">--Select Your Qualification--</option>
+                                    <option value="BTech">BE/BTech</option>
+                                    <option value="MTech">ME/MTech</option>
+                                    <option value="Diploma">Diploma</option>
+
+                                </select>
+                            </p>
+                        </div>
+
+                        <div class="col-4 mx-5">
+                            <br>
+                            <br>
+                            <p style="display: flex; padding-left: 80px;">
+                                Skill: <select name="Degree" id="Skill" required style="background-color: whitesmoke ;">
+                                    <option value="">--Select Your Skill--</option>
+                                    <option value="C++">C++</option>
+                                    <option value="java">JAVA</option>
+                                    <option value="python">Python</option>
+                                    <option value="c">C</option>
+                                    <option value=".net">.NET</option>
+                                    <option value="dbms">DBMS</option>
+                                </select>
+                            </p>
+
+                            <input type="radio" id="company" name="search">Search Company
+                            <br>
+                            <input type="radio" id="student" name="search">Search Student
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </form>
+            </div>
+
+            <!--Functional Area-->
+
+            <div class="col-xl-10 col-md-10 my-3 mx-3 d-block">
+                <img id="imageId" class="imgsuc" src="../College Project/img/meeting-tipps-erfolgreich-1200x630.jpg"
+                    alt="" height="390px" >
+
+                <iframe src="Student Form.html" id="formId" frameborder="0" height="1300px" width="1300px"
+                    style="display:none;" class="col-xl-11 col-md-11 mx-5"></iframe>
+
+                <iframe src="Comapny form.html" id="companyId" frameborder="0" height="1300px" width="1300px"
+                    style="display: none;" class="col-xl-12 col-md-12 my-5"></iframe>
+
+                <iframe src="Job Post.html" id="jobId" frameborder="0" height="1000px" width="1000px"
+                    style="display:none;" class="col-xl-12 col-md-12 my-5"></iframe>
+
+                <iframe src="Job Apply.html" id="ApplyId" frameborder="0" height="1000px" width="1000px"
+                    style="display:none;" class="col-xl-12 col-md-12 my-5"></iframe>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="col-3 ">
+            <!--3rd Form-->
+            <div class="col-xl-8 col-md-8 border border-success " style="border-radius:30px ;">
+                <form action="">
+                    <h5 style="background-color:#88EE85 ; border-radius: 50px;">
+                        <span>
+                            Recruiter Login Area
+                        </span>
+                    </h5>
+                    <br>
+                    <p style="display: flex; ">
+                        <span>Username:</span> <input type="text" placeholder="Enter the usename">
+                    </p>
+                    <p style="display: flex; ">
+                        <span>Password: </span> <input type="password" placeholder="Enter the password">
+                    </p>
+
+                    <button type="submit" class="btn btn-success">
+                        Login
+                    </button>
+                    <p align="right">
+                        <a href="#" class="text-success" onclick="showReg()">
+                            <u>New Company?</u>
+                        </a>
+                    </p>
+                    <p align="right">
+                        <a href="#" class="text-success">
+                            <u>Forget Password?</u>
+                        </a>
+                    </p>
+
+
+                </form>
+            </div>
+
+
+            <!--Company List-->
+
+            <div class="col-xl-8 col-md-8 border border-success my-5" style="border-radius:30px ;">
+                <h5 style="background-color:#88EE85 ; border-radius: 50px;">
+                    <span>
+                        Latest Companies:
+                    </span>
+                </h5>
+                <br>
+                <br>
+                <span style="color:#88EE85">
+                    <a href="#" class="list-group-item list-group-item-action">L&T Construction</a>
+                    <a href="#" class="list-group-item list-group-item-action">Shine Computer Solution</a>
+                    <a href="#" class="list-group-item list-group-item-action">Cisco Pvt Ltd</a>
+                    <a href="#" class="list-group-item list-group-item-action">Infotech Pvt Ltd</a>
+                    <a href="#" class="list-group-item list-group-item-action">AB Infotech</a>
+                </span>
+
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+<script>
+
+    function showForm() {
+
+        document.getElementById("formId").style.display = "block";
+        document.getElementById("imageId").style.display = "none";
+        document.getElementById("companyId").style.display = "none";
+        document.getElementById("jobId").style.display = "none";
+        document.getElementById("ApplyId").style.display = "none";
+    }
+
+
+    function showReg() {
+        document.getElementById("formId").style.display = "none";
+        document.getElementById("companyId").style.display = "block";
+        document.getElementById("imageId").style.display = "none";
+        document.getElementById("jobId").style.display = "none";
+        document.getElementById("ApplyId").style.display = "none";
+    }
+
+    function ShowJob() {
+        document.getElementById("formId").style.display = "none";
+        document.getElementById("companyId").style.display = "none";
+        document.getElementById("imageId").style.display = "none";
+        document.getElementById("jobId").style.display = "block";
+        document.getElementById("ApplyId").style.display = "none";
+    }
+
+    function ShowApply() {
+        document.getElementById("formId").style.display = "none";
+        document.getElementById("companyId").style.display = "none";
+        document.getElementById("imageId").style.display = "none";
+        document.getElementById("jobId").style.display = "none";
+        document.getElementById("ApplyId").style.display = "block";
+    }
+
+
+</script>
+
+</html>
