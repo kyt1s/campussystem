@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "BaselineValue": "870",
+      "TargetValue": "78",
+      "Savings": "76"
+    },
+    {
+      "id": 7,
+      "BaselineValue": "340",
+      "TargetValue": "52",
+      "Savings": "65"
+    },
+    {
+      "id": 8,
+      "BaselineValue": "679",
+      "TargetValue": "60",
+      "Savings": "78"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
